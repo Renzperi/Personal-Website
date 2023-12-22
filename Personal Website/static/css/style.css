@@ -1,4 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+
+:root {
+  /* main color scheme */
+  --primary-color-60: #0d0607;
+  --secondary-color-30: #5f1619;
+  --tertiary-color-10: #bbacae;
+
+  /* color variables */
+  --body-bg-color: var(--primary-color-60);
+  --font-color: var(--tertiary-color-10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--font-color);
+}
+
 body {
-  background-color: darkcyan;
-  color: white;
+  background-color: var(--body-bg-color);
+}
+
+/* util class */
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  height: 3.75rem;
+  width: 100vw;
+  background-color: var(--secondary-color-30);
+  font-size: clamp(1em, 1.5em, 2em);
+}
+
+.header > div {
+  background-color: green;
+  align-content: center;
 }

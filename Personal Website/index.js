@@ -12,12 +12,14 @@ app.set("view engine", "ejs");
 const homeRoute = require("./routes/home");
 const projectsRoute = require("./routes/projects");
 const portfolioRoute = require("./routes/portfolio");
-const contacts = require("./routes/contacts");
+const contactsRoute = require("./routes/contacts");
+const templateRoute = require("./routes/template");
 // routes
 app.use("/", homeRoute);
 app.use("/projects", projectsRoute);
 app.use("/portfolio", portfolioRoute);
-app.use("/contacts", contacts);
+app.use("/contacts", contactsRoute);
+app.use("/template", templateRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);

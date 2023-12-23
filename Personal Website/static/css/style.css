@@ -53,9 +53,29 @@ nav {
 }
 
 nav ul {
+  padding: 2vw;
   min-width: 25vw;
   min-height: 40vh;
+  background-color: var(--10-yIMn-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  margin: 10px;
+  position: relative;
+  list-style-type: none;
+}
+
+nav i {
+  margin-right: 8px;
+  position: relative;
+  left: 10px;
   background-color: green;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 /* util class */

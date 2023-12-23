@@ -1,21 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+@import url("https://fonts.cdnfonts.com/css/nintendo-ds-bios");
 
 :root {
-  /* main color scheme */
-  --primary-color-60: #0d0607;
-  --secondary-color-30: #5f1619;
-  --tertiary-color-10: #bbacae;
+  /* main color scheme 60%*/
+  --60-federal-blue: #231f60;
+  /* complimentary colors 30%*/
+  --30-delt-blue: #252c62;
+  --30-rebecca-purple: #573b8b;
+  /* minor complimentary colors 10% */
+  --10-yIMn-blue: #425898;
+  --10-royal-blue: #212874;
 
   /* color variables */
-  --body-bg-color: var(--primary-color-60);
-  --font-color: var(--tertiary-color-10);
+  --body-bg-color: var(--60-federal-blue);
+  --font-color: white;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Nintendo DS BIOS", sans-serif;
   color: var(--font-color);
 }
 
@@ -23,18 +27,35 @@ body {
   background-color: var(--body-bg-color);
 }
 
-/* util class */
-.header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-  height: 3.75rem;
-  width: 100vw;
-  background-color: var(--secondary-color-30);
-  font-size: clamp(1em, 1.5em, 2em);
+header {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--30-rebecca-purple);
+  max-height: 6vh;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header > div {
-  background-color: green;
-  align-content: center;
+header label {
+  padding: 4px;
+  text-align: center;
+  font-size: clamp(16px, 5vw, 24px);
 }
+
+nav {
+  position: relative;
+  z-index: 1;
+  top: 6vh;
+  display: inline-block;
+}
+
+nav ul {
+  min-width: 25vw;
+  min-height: 40vh;
+  background-color: green;
+}
+
+/* util class */

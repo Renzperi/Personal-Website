@@ -12,18 +12,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="scripts/script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div>
-        <h1>MY TITLE</h1>
-      </div>
-      <div>
+    <header>
+      <button id="navMenuBtn">
         <i class="fa-solid fa-bars"></i>
-      </div>
+      </button>
+      <label>My Website</label>
     </header>
 
-    <main>this is main</main>
+    <nav class="hide" id="navMenu">
+      <ul>
+        <li>
+          <a href="/">
+            <i class="fa-solid fa-house"></i>
+            <label>Home</label>
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
+            <i class="fa-solid fa-terminal"></i>
+            <label>Projects</label>
+          </a>
+        </li>
+        <li>
+          <a href="/portfolio">
+            <i class="fa-solid fa-user-tie"></i>
+            <label>Portfolio</label>
+          </a>
+        </li>
+        <li>
+          <a href="/contacts">
+            <i class="fa-regular fa-comments"></i>
+            <label>Contacts</label>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <footer>Copyright lmao</footer>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>

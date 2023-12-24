@@ -1,1 +1,3 @@
-console.log("hello world");
+const navMenuBtn = document.querySelector("#navMenuBtn");
+
+console.log("Hello");

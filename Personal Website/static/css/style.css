@@ -12,6 +12,9 @@
 
   /* color variables */
   --body-bg-color: var(--60-federal-blue);
+  --header-bg-color: var(--30-rebecca-purple);
+  --navmenu-bg-color: var(--10-royal-blue);
+  --footer-bg-color: var(--10-yIMn-blue);
   --font-color: white;
 }
 
@@ -30,52 +33,68 @@ body {
 header {
   position: fixed;
   z-index: 1;
-  background-color: var(--30-rebecca-purple);
+  background-color: var(--header-bg-color);
   max-height: 6vh;
   height: 6vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
+}
+
+header button {
+  position: absolute;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 0.8em;
 }
 
 header label {
   padding: 4px;
   text-align: center;
-  font-size: clamp(16px, 5vw, 24px);
 }
 
 nav {
-  position: relative;
-  z-index: 1;
-  top: 6vh;
   display: inline-block;
+  height: 100vh;
+  min-width: 45px;
+  position: fixed;
+  top: 6vh;
+  background-color: var(--navmenu-bg-color);
+  font-size: 24px;
 }
 
-nav ul {
-  padding: 2vw;
-  min-width: 25vw;
-  min-height: 40vh;
-  background-color: var(--10-yIMn-blue);
+nav li a {
+  margin: 18px 5% 18px 5%;
   display: flex;
-  flex-direction: column;
-}
-
-nav li {
-  margin: 10px;
-  position: relative;
   list-style-type: none;
-}
-
-nav i {
-  margin-right: 8px;
-  position: relative;
-  left: 10px;
-  background-color: green;
-}
-
-nav a {
   text-decoration: none;
+  font-size: 1em;
+}
+
+nav li a i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+nav li a label {
+  margin-left: 20px;
+  margin-right: 30px;
+  text-align: end;
+  display: none;
+}
+
+footer {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  font-size: 16px;
+  width: 100vw;
+  height: 1em;
+  text-align: center;
+  background-color: var(--footer-bg-color);
 }
 
 /* util class */

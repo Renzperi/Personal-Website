@@ -98,3 +98,6 @@ footer {
 }
 
 /* util class */
+.hide {
+  visibility: hidden;
+}

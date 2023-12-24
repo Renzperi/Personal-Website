@@ -14,7 +14,10 @@
   --body-bg-color: var(--60-federal-blue);
   --header-bg-color: var(--30-rebecca-purple);
   --navmenu-bg-color: var(--10-royal-blue);
+  --card-container-bg: var(--30-rebecca-purple);
+  --cards-bg-color: var(--30-delt-blue);
   --footer-bg-color: var(--10-yIMn-blue);
+
   --font-color: white;
 }
 
@@ -88,7 +91,7 @@ nav li a label {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   bottom: 0;
   font-size: 16px;
@@ -107,6 +110,8 @@ footer {
 main {
   position: relative;
   top: 12vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
@@ -149,4 +154,64 @@ main {
   text-shadow: 2px 2px #252c62;
   background-color: var(--60-federal-blue);
   font-size: 1.4rem;
+}
+
+.projectsPreview {
+  position: absolute;
+  top: 35vh;
+  width: 100%;
+}
+
+.projectsPreview h2 {
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 1.6rem;
+  text-shadow: 2px 2px var(--10-yIMn-blue);
+}
+
+.projectsPreview div.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  min-height: 40vh;
+  background-color: var(--card-container-bg);
+}
+
+.card {
+  margin: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 250px;
+  width: 250px;
+  min-height: 250px;
+  border-radius: 15%;
+  background-color: var(--cards-bg-color);
+}
+
+.card label {
+  margin-top: 15%;
+  margin-bottom: 2%;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #252c62;
+  font-size: 1.2rem;
+}
+
+.card img {
+  margin-bottom: 2%;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.card p {
+  margin-bottom: 5%;
+  max-width: 80%;
+  width: 80%;
+  font-size: 1rem;
 }
